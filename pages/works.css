@@ -106,20 +106,21 @@ nav > :first-child {
     transition: 0.3s
 }
 
-.main-visual{ 
-  width: 100%; /* 横幅いっぱい */
-  height: 650px; /* 高さ650px */
-  background-image: url(img/mv.png); /* 背景画像を設定、imgフォルダ内のmv.pngを使用 */
-  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
-  background-position: center; /* 背景画像を中央に配置 */ 
+.main-visual {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/mv.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
 }
 
 .main-visual-text {
-    width: 960px;
-    height: 650px;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
+    /*width: 960px;*/
+    /*height: 650px;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    /*color: white;*/
 }
 
 .first-char {
@@ -127,11 +128,15 @@ nav > :first-child {
 }
 
 .main-visual-title {
-    padding-top: 256px;
-    font-size: 100px;
+    padding-top: 90px;
     color: #F9F9F9;
-    line-height: 145%;
+    text-align: center;
     font-family: Raleway;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 0;
 }
 
 .main-visual-subtitle {
@@ -142,9 +147,11 @@ nav > :first-child {
     font-family: Noto Sans JP;
 }
 
+
 /* .mainをmainに変更して、専用タグのmainを指定するように設定する。 */
 main{
   width: 100%; /* 横幅いっぱい */
+  padding-bottom: 128px;
 }
 
 .works {
@@ -188,27 +195,27 @@ h2 {
 }
 
 .desk{
-    background-image: url(img/sketch.jpg); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
+    background-image: url(../img/sketch.jpg); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
 }
 
 .pc-blue{
-    background-image: url(img/websuku.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
+    background-image: url(../img/websuku.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
 }
 
 .write-board{
-    background-image: url(img/write.jpg); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
+    background-image: url(../img/write.jpg); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
 }
 
 .pc-yellow{
-    background-image: url(img/webcamp.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
+    background-image: url(../img/webcamp.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
 }
 
 .talk{
-    background-image: url(img/talk.jpg); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
+    background-image: url(../img/talk.jpg); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
 }
 
 .pc-pink{
-    background-image: url(img/webcamp-mother.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
+    background-image: url(../img/webcamp-mother.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
 }
 
 .view-all {

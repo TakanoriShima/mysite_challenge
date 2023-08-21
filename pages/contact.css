@@ -18,6 +18,11 @@ header{
   width: 100%; /* 横幅100% */
   height: 70px; /* 高さ70px */
   background-color: #EC715F; /* 背景色をカラーコードで指定 */
+  /* 固定 */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
 }
 
 .heading img{
@@ -105,6 +110,7 @@ nav > :first-child {
     background-image: url(../img/mv.png);
     background-size: cover;
     background-position: center;
+    margin-top: 70px;
 }
 
 .main-visual-text {
