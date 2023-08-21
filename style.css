@@ -12,8 +12,8 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  width: 1440px;
-  margin: 0 auto;
+  /*width: 1440px;*/
+  /*margin: 0 auto;*/
 }
 
 header{
@@ -174,6 +174,64 @@ h2 {
     text-decoration: none;
 }
 
+
+.profile {
+    text-align: center;
+    padding: 98px 239px 90px 239px;
+}
+
+.profile-text {
+    color: #414141;
+    line-height: 180%;
+    text-align: left;
+    width: 800px;
+    height: 145px;
+    margin: 64px auto 0;
+}
+
+.profile-contents {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    justify-content: space-between;
+}
+
+.profile-image {
+    background-image: url(img/my-icon.jpg);
+    width: 250px;
+    height: 250px;
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+}
+
+.profile-introduction {
+    width: 400px;
+    height: 424px;
+    text-align: left;
+}
+
+
+h3 {
+    color: #414141;
+    font-size: 20px;
+}
+
+.name {
+    margin-top: 21px;
+    margin-bottom: 32px;
+    color: #414141;
+    line-height: 180%;
+}
+
+.skills {
+    margin-top: 21px;
+    margin-bottom: 32px;
+    color: #414141;
+    line-height: 180%;
+}
+
 footer {
   width: 100%; /* 横幅100% */
   height: 60px; /* 高さ60px */
@@ -186,29 +244,4 @@ footer {
   color: white; /* 文字色を白に設定 */
 }
 
-.profile{
-  margin-top: 30px;    /* 上側に40pxのmarginを指定 */
-  text-align: center; /* .portfolio内の文字はすべて横方向に中央寄せなのでまとめて設定 */
-}
-.main-contents2-box-man{
-  background-image: url(img/my-icon.jpg); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
-  width: 400px; /* 横幅いっぱい */
-  height: 300px;
-  background-size: 300px 300px;  /* pxを指定して表示 */
-  background-repeat:no-repeat
-}
-.main-contents2-text{
-  width: 400px; /* 横幅いっぱい */
-  height: 300px;
-  text-align:left
-}
-.main-contents2{
-  width: 800px; /* 横幅800px */
-  margin: 0 auto;  /* 中央寄せ */
-  display: flex; /* flexboxを設定 */
-  margin-bottom: 90px; /* 下側に40pxのmarginを指定 */
-}
-h3{
-  line-height: 30px; /* 行の高さを70pxに設定し、縦方向に中央寄せで文字を配置する */
-  font-size: 20px;
-}
+
