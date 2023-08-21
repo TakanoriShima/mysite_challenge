@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
 * {
   margin: 0;
@@ -5,15 +7,8 @@
   box-sizing: border-box;
 }
 
-.width-960px {
-  width: 960px;
-  margin: 0 auto;
-}
-
 body {
   font-family: "Raleway", sans-serif;
-  /*width: 1440px;*/
-  /*margin: 0 auto;*/
 }
 
 header{
@@ -149,74 +144,150 @@ nav > :first-child {
 
 
 /* .mainをmainに変更して、専用タグのmainを指定するように設定する。 */
-main{
-  width: 100%; /* 横幅いっぱい */
-  padding-bottom: 128px;
+main {
+    width: 100%;
+    padding-bottom: 128px;
+    padding-top: 128px;
 }
 
-.works {
-    text-align: center;
-    width: 960px;
+.case {
+    border-bottom: solid 1px #E4E4E4;
+    padding-bottom: 96px;
+    padding-top: 96px;
+}
+
+.contents_inner {
+    padding-top: 128px;
+    margin-top:-128px;   
+}
+
+.case:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+
+.workscase {
+    width: 704px;
+    height: 260px;
     margin: 0 auto;
-    padding-top: 140px;
-    margin-bottom: 160px;
 }
 
-h2 {
-    color: #414141;
-    font-size: 36px;
-    line-height: 160%;
-    font-family: Raleway;
-    font-style: normal;
-}
-
-.border_line {
-    width: 30px;
-    height: 6px;
-    border-bottom: 3px solid pink;
-    margin: 0 auto;
-}
-
-.main-contents {
-    margin: 80px 0;
+.workshead {
     display: flex;
-    width: 960px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 72px;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.main-contents-box {
-    width: 272px;
-    height: 272px;
+.worksindex {
+    padding: 0 20px;
+    width: 105px;
+    height: 80px;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+
+.example {
+    width: 65px;
+    color: #414141;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 0;
+}
+
+.number {
+    width: 65px;
+    color: var(--text-black, #414141);
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+
+.workstitle {
+    width: 570px;
+    height: 112px;
+}
+
+
+h4 {
+    width: 560px;
+    color: var(--text-black, #414141);
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145%;
+}
+
+.category {
+    width: 560px;
+    color: var(--text-gray, #909090);
+    font-family: Noto Sans JP;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+
+.workbody {
+    padding-top: 32px;
+    color: var(--text-black, #414141);
+    font-family: Noto Sans JP;
+    font-size: 15.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+
+.image-box {
+    width: 704px;
+    height: 704px;
+    margin: 0 auto;
     background-size: cover;
     background-position: center;
+    margin-top: 24px;
 }
 
-.desk{
-    background-image: url(../img/sketch.jpg); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
+
+.work1-image {
+    background-image: url(../img/work1-image.png);
+    height: 704px;
 }
 
-.pc-blue{
-    background-image: url(../img/websuku.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
+.work2-image {
+    background-image: url(../img/work2-image.png);
+    height: 704px;
 }
 
-.write-board{
-    background-image: url(../img/write.jpg); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
+.work3-image {
+    background-image: url(../img/work3-image.png);
+    height: 704px;
 }
 
-.pc-yellow{
-    background-image: url(../img/webcamp.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
+.work4-image {
+    background-image: url(../img/work4-image.png);
+    height: 704px;
 }
 
-.talk{
-    background-image: url(../img/talk.jpg); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
+.work5-image {
+    background-image: url(../img/work5-image.png);
+    height: 704px;
 }
 
-.pc-pink{
-    background-image: url(../img/webcamp-mother.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
+.work6-image {
+    background-image: url(../img/work6-image.png);
+    height: 704px;
 }
+
 
 .view-all {
     width: 224px;
@@ -242,173 +313,6 @@ h2 {
     transition: 0.3s;
 }
 
-.profile {
-    text-align: center;
-    /*width: 960px;*/
-    margin: 0 auto;
-    padding-top: 98px;
-    padding-bottom: 90px;
-    background: #FFF7F2;
-}
-
-.profile-text {
-    color: #414141;
-    line-height: 180%;
-    text-align: left;
-    width: 800px;
-    height: 145px;
-    margin: 64px auto 0;
-    font-family: Noto Sans JP;
-}
-
-.profile-contents {
-    width: 800px;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 90px;
-    justify-content: space-between;
-}
-
-.profile-image {
-    background-image: url(img/my-icon.jpg);
-    width: 250px;
-    height: 250px;
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-}
-
-.profile-introduction {
-    width: 400px;
-    height: 424px;
-    text-align: left;
-}
-
-
-h3 {
-    color: #414141;
-    font-size: 20px;
-    font-family: Noto Sans JP;
-}
-
-.name {
-    margin-top: 21px;
-    margin-bottom: 32px;
-    color: #414141;
-    font-family: Noto Sans JP;
-    line-height: 180%;
-}
-
-.skills {
-    margin-top: 21px;
-    margin-bottom: 32px;
-    color: #414141;
-    line-height: 180%;
-    font-family: Noto Sans JP;
-}
-
-.blogs {
-    text-align: center;
-    width: 960px;
-    margin: 0 auto;
-    padding-top: 140px;
-    padding-bottom: 160px;
-}
-
-.view-all-blogs {
-    display: block;
-    padding-top: 100px;
-    text-align: left;
-    color: #909090;
-    line-height: 180%;
-    font-family: Noto Sans CJK JP;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    text-decoration-line: underline;
-}
-
-
-.blogs-contents {
-    display: flex;
-    width: 960px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 72px;
-    flex-wrap: wrap;
-    height: 751px;
-    margin-top: 20px;
-}
-
-.blog-cart {
-    width: 272px;
-    height: 319px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.datetime {
-    display: flex;
-    width: 100%;
-    height: 29.152px;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: #EC715F;
-    font-size: 12px;
-    line-height: 180%;
-    text-align: left;
-    font-family: Noto Sans JP;
-}
-
-.caption {
-    width: 272px;
-    color: #414141;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 145%;
-    text-align: left;
-    font-family: Noto Sans JP;
-}
-
-.blog1{
-    background-image: url(img/blog1.png); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
-    width: 272px;
-    height: 177px;
-}
-
-.blog2{
-    background-image: url(img/blog2.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
-    width: 272px;
-    height: 177px;
-}
-
-.blog3{
-    background-image: url(img/blog3.png); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
-    width: 272px;
-    height: 177px;
-}
-
-.blog4{
-    background-image: url(img/blog4.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
-    width: 272px;
-    height: 177px;
-}
-
-.blog5{
-    background-image: url(img/blog5.png); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
-    width: 272px;
-    height: 177px;
-}
-
-.blog6{
-    background-image: url(img/blog6.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
-    width: 272px;
-    height: 177px;
-}
 
 footer {
     width: 100%;
