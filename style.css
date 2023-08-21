@@ -60,6 +60,29 @@ nav > :first-child {
     font-family: Noto Sans JP;
 }
 
+
+/* ナビゲーションメニューにhoverした時に下線表示 */
+.nav-list-item a {
+  text-decoration: none; /* デフォルトの下線を非表示にする  */
+  background-image: linear-gradient(90deg, #eeeeeeab, #eeeeeeab); /* 線の色 */ 
+  background-repeat: no-repeat;
+  background-position: left bottom; /* 線の起点を左・下に設定 */
+  background-size: 0px 5px; /* 線の横幅を0、縦幅を1pxに */
+  transition: background-size 0.4s; /* 線を伸ばすアニメーション実行時間を指定 */
+  padding-bottom: 5px;
+}
+
+.contact-button {
+    display: block;
+    background-color: white;
+    border-radius: 20px;
+    height: 28px;
+    width: 100px;
+    margin-top: 20px;
+    line-height: 30px;
+    color: #EC715F !important;
+}
+
 .main-visual{ 
   width: 100%; /* 横幅いっぱい */
   height: 650px; /* 高さ650px */
@@ -181,6 +204,12 @@ h2 {
     text-decoration: none;
     font-family: Noto Sans JP;
     font-style: normal;
+}
+
+.view-all:hover {
+    background: #1c1c1c7d;
+    color: #F9F9F9;
+    transition: 0.3s;
 }
 
 .profile {
