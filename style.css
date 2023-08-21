@@ -27,7 +27,6 @@ header{
 }
 
 nav{
-  width: 960px; /* 横幅960px */
   height: 70px; /* 高さ70px */
   margin: 0 auto;  /* 中央寄せ */
   display: flex; /* flexboxを設定 */
@@ -55,9 +54,10 @@ nav > :first-child {
   color: white; /* 文字色を白に変更 */
 }
 
-.nav-list-item a{
-  text-decoration: none; /* リンクに設定した場合発生する文字の装飾を解除。 */
-  color: white; /* リンクを設定すると文字が青色になってしまうので、白に変更 */
+.nav-list-item a {
+    text-decoration: none;
+    color: white;
+    font-family: Noto Sans JP;
 }
 
 .main-visual{ 
@@ -68,12 +68,12 @@ nav > :first-child {
   background-position: center; /* 背景画像を中央に配置 */ 
 }
 
-.main-visual-text{
-  width: 650px; /* 横幅650px */
-  height: 650px; /* 高さ650px */
-  margin: 0 auto; /* 中央寄せ */
-  text-align: center; /* 横方向に中央寄せで文字を配置する。*/
-  color:white;  /* 文字色を白に変更 */ 
+.main-visual-text {
+    width: 960px;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
 }
 
 .first-char {
@@ -85,13 +85,15 @@ nav > :first-child {
     font-size: 100px;
     color: #F9F9F9;
     line-height: 145%;
+    font-family: Raleway;
 }
 
 .main-visual-subtitle {
     width: 784px;
-    flex-shrink: 0;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 200%;
+    font-family: Noto Sans JP;
 }
 
 /* .mainをmainに変更して、専用タグのmainを指定するように設定する。 */
@@ -106,10 +108,13 @@ main{
     padding-top: 140px;
     margin-bottom: 160px;
 }
+
 h2 {
     color: #414141;
     font-size: 36px;
     line-height: 160%;
+    font-family: Raleway;
+    font-style: normal;
 }
 
 .border_line {
@@ -174,6 +179,8 @@ h2 {
     font-weight: 700;
     line-height: 180%;
     text-decoration: none;
+    font-family: Noto Sans JP;
+    font-style: normal;
 }
 
 .profile {
@@ -192,6 +199,7 @@ h2 {
     width: 800px;
     height: 145px;
     margin: 64px auto 0;
+    font-family: Noto Sans JP;
 }
 
 .profile-contents {
@@ -221,12 +229,14 @@ h2 {
 h3 {
     color: #414141;
     font-size: 20px;
+    font-family: Noto Sans JP;
 }
 
 .name {
     margin-top: 21px;
     margin-bottom: 32px;
     color: #414141;
+    font-family: Noto Sans JP;
     line-height: 180%;
 }
 
@@ -235,6 +245,7 @@ h3 {
     margin-bottom: 32px;
     color: #414141;
     line-height: 180%;
+    font-family: Noto Sans JP;
 }
 
 .blogs {
@@ -251,6 +262,11 @@ h3 {
     text-align: left;
     color: #909090;
     line-height: 180%;
+    font-family: Noto Sans CJK JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
 }
 
 
@@ -286,6 +302,7 @@ h3 {
     font-size: 12px;
     line-height: 180%;
     text-align: left;
+    font-family: Noto Sans JP;
 }
 
 .caption {
@@ -295,6 +312,7 @@ h3 {
     font-weight: 700;
     line-height: 145%;
     text-align: left;
+    font-family: Noto Sans JP;
 }
 
 .blog1{
@@ -360,10 +378,7 @@ footer {
     font-size: 20px;
     font-weight: 700;
     line-height: 145%;
-}
-
-.footer-text {
-  color: white; /* 文字色を白に設定 */
+    font-family: Noto Sans JP;
 }
 
 .sns {
@@ -386,3 +401,11 @@ footer img {
     background: #F9F9F9;
 }
 
+.footer-text {
+    color: #F9F9F9;
+    font-family: Noto Sans JP;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
