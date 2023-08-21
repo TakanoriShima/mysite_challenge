@@ -100,10 +100,12 @@ main{
 }
 
 .works {
-    padding: 140px 238px 160px 238px;
     text-align: center;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 140px;
+    margin-bottom: 160px;
 }
-
 h2 {
     color: #414141;
     font-size: 36px;
@@ -174,10 +176,13 @@ h2 {
     text-decoration: none;
 }
 
-
 .profile {
     text-align: center;
-    padding: 98px 239px 90px 239px;
+    /*width: 960px;*/
+    margin: 0 auto;
+    padding-top: 98px;
+    padding-bottom: 90px;
+    background: #FFF7F2;
 }
 
 .profile-text {
@@ -232,16 +237,152 @@ h3 {
     line-height: 180%;
 }
 
+.blogs {
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-bottom: 160px;
+}
+
+.view-all-blogs {
+    display: block;
+    padding-top: 100px;
+    text-align: left;
+    color: #909090;
+    line-height: 180%;
+}
+
+
+.blogs-contents {
+    display: flex;
+    width: 960px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 72px;
+    flex-wrap: wrap;
+    height: 751px;
+    margin-top: 20px;
+}
+
+.blog-cart {
+    width: 272px;
+    height: 319px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.datetime {
+    display: flex;
+    width: 100%;
+    height: 29.152px;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #EC715F;
+    font-size: 12px;
+    line-height: 180%;
+    text-align: left;
+}
+
+.caption {
+    width: 272px;
+    color: #414141;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 145%;
+    text-align: left;
+}
+
+.blog1{
+    background-image: url(img/blog1.png); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
+    width: 272px;
+    height: 177px;
+}
+
+.blog2{
+    background-image: url(img/blog2.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
+    width: 272px;
+    height: 177px;
+}
+
+.blog3{
+    background-image: url(img/blog3.png); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
+    width: 272px;
+    height: 177px;
+}
+
+.blog4{
+    background-image: url(img/blog4.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
+    width: 272px;
+    height: 177px;
+}
+
+.blog5{
+    background-image: url(img/blog5.png); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
+    width: 272px;
+    height: 177px;
+}
+
+.blog6{
+    background-image: url(img/blog6.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
+    width: 272px;
+    height: 177px;
+}
+
 footer {
-  width: 100%; /* 横幅100% */
-  height: 60px; /* 高さ60px */
-  text-align: center; /* 横方向に中央寄せで文字を配置する。*/
-  line-height: 60px; /* 行の高さを60pxに設定し、縦方向に中央寄せで文字を配置する */
-  background-color: #EC715F; /* 背景色をカラーコードで指定 */
+    width: 100%;
+    height: 412px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #EC715F;
+    display: flex;
+    padding: 28px 0px 16px 0px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 36px;
+}
+
+.contact-link {
+    text-decoration: none;
+    display: flex;
+    height: 60px;
+    padding: 24px 100px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: #F9F9F9;
+    color: #EC715F;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 145%;
 }
 
 .footer-text {
   color: white; /* 文字色を白に設定 */
 }
 
+.sns {
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer_border_line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.3;
+    background: #F9F9F9;
+}
 
