@@ -60,16 +60,29 @@ nav > :first-child {
     font-family: Noto Sans JP;
 }
 
-
-/* ナビゲーションメニューにhoverした時に下線表示 */
 .nav-list-item a {
-  text-decoration: none; /* デフォルトの下線を非表示にする  */
-  background-image: linear-gradient(90deg, #eeeeeeab, #eeeeeeab); /* 線の色 */ 
-  background-repeat: no-repeat;
-  background-position: left bottom; /* 線の起点を左・下に設定 */
-  background-size: 0px 5px; /* 線の横幅を0、縦幅を1pxに */
-  transition: background-size 0.4s; /* 線を伸ばすアニメーション実行時間を指定 */
-  padding-bottom: 5px;
+  position: relative; /*疑似要素使用のため*/
+  text-decoration: none; /*標準時の下線を削除*/
+}
+
+.nav-list-item:not(:last-child) a:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%; /*下線の幅*/
+  height: 4px; /*下線の太さ*/
+  background: black;
+  visibility: hidden; /*非表示*/
+  opacity: 0; /*透明*/
+  transition: .3s;
+  background-color: white;
+}
+
+.nav-list-item:not(:last-child) a:hover::after {
+   visibility: visible; /*表示*/
+   opacity: 1; /*不透明に*/
+   background-color: white;
 }
 
 .contact-button {
@@ -81,6 +94,11 @@ nav > :first-child {
     margin-top: 20px;
     line-height: 30px;
     color: #EC715F !important;
+}
+
+.contact-button:hover {
+    background-color: #ffffff9e;
+    transition: 0.3s
 }
 
 .main-visual{ 
@@ -410,6 +428,10 @@ footer {
     font-family: Noto Sans JP;
 }
 
+.contact-link:hover {
+    color: #EC715F;
+}
+
 .sns {
     display: flex;
     padding: 40px 0px;
@@ -438,3 +460,4 @@ footer img {
     font-weight: 400;
     line-height: 180%;
 }
+
