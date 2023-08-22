@@ -71,9 +71,11 @@ $(window).scroll(function() {
     }
 });
 
-// ハンバーガー
+// ハンバーガーメニュー用
 $(function() {
-    $(".nav_toggle").on("click", function () {
-        $(".nav_toggle, .nav").toggleClass("show");
-    });
+  // console.log('OK');
+  $('.nav-list li a').on('click', function(event) {
+    // console.log('clicked');
+    $('#drawer_input').prop('checked', false);
+  });
 });
