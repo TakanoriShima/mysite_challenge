@@ -717,7 +717,42 @@ footer img {
         line-height: 145%;
     }
     
+    /*メインビジュアル*/
+    .main-visual {
+        height: 550px;
+    }
+    .main-visual-title {
+        font-size: 52px;
+        font-family: Raleway;
+        font-weight: 600;
+    }
     
+    .main-visual-subtitle {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 150%;
+        font-family: "Noto Sans JP";
+        padding: 0 30px 0 30px;
+    }
+    
+    /*works*/
+    .works {
+        padding-top: 64px;
+    }
+    
+    .main-contents-box {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .main-contents {
+        width: 90%;
+        margin: 0 auto;
+        gap: 16px;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
 }
 
 
