@@ -888,6 +888,10 @@ footer img {
         padding-bottom: 0;
     }
 
+    /*upper button*/
+    .fixed_btn {
+        right: 15px;
+    }
 
 }
 
