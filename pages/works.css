@@ -1,88 +1,112 @@
 @charset "utf-8";
 
 /* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
-header{
-  width: 100%; /* 横幅100% */
-  height: 70px; /* 高さ70px */
-  background-color: #EC715F; /* 背景色をカラーコードで指定 */
-  /* 固定 */
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
+header {
+    width: 100%;
+    /* 横幅100% */
+    height: 70px;
+    /* 高さ70px */
+    background-color: #EC715F;
+    /* 背景色をカラーコードで指定 */
+    /* 固定 */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
 }
 
-.heading img{
-  height: 60px;
+.heading img {
+    height: 60px;
 }
 
-nav{
-  height: 70px; /* 高さ70px */
-  margin: 0 auto;  /* 中央寄せ */
-  display: flex; /* flexboxを設定 */
-  justify-content: flex-end; /* 子要素を右詰めで順に並べるように設定する */
+nav {
+    height: 70px;
+    /* 高さ70px */
+    margin: 0 auto;
+    /* 中央寄せ */
+    display: flex;
+    /* flexboxを設定 */
+    justify-content: flex-end;
+    /* 子要素を右詰めで順に並べるように設定する */
 }
 
-nav > :first-child {
+nav> :first-child {
     margin-right: auto;
     width: 214px;
     height: 65px;
     padding-top: 5px;
 }
 
-.nav-list{
-  width: 560px; /* 横幅560px */
-  display: flex; /* flexboxを設定 */
-  justify-content: flex-end; /* 要素を右詰めで順に並べるように設定する */
+.nav-list {
+    width: 560px;
+    /* 横幅560px */
+    display: flex;
+    /* flexboxを設定 */
+    justify-content: flex-end;
+    /* 要素を右詰めで順に並べるように設定する */
 }
 
-.nav-list-item{
-  margin: 0 30px; /* 上下に0pxの隙間、左右に30pxずつの隙間を発生させる。 */
-  list-style: none; /* li使用時に発生する黒丸を削除 */
-  line-height: 70px; /* 行の高さを70pxに設定し、縦方向に中央寄せで文字を配置する */
-  text-align: center; /* 横方向に中央寄せで文字を配置する。*/
-  color: white; /* 文字色を白に変更 */
+.nav-list-item {
+    margin: 0 30px;
+    /* 上下に0pxの隙間、左右に30pxずつの隙間を発生させる。 */
+    list-style: none;
+    /* li使用時に発生する黒丸を削除 */
+    line-height: 70px;
+    /* 行の高さを70pxに設定し、縦方向に中央寄せで文字を配置する */
+    text-align: center;
+    /* 横方向に中央寄せで文字を配置する。*/
+    color: white;
+    /* 文字色を白に変更 */
 }
 
 .nav-list-item a {
     text-decoration: none;
     color: white;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 .nav-list-item a {
-  position: relative; /*疑似要素使用のため*/
-  text-decoration: none; /*標準時の下線を削除*/
+    position: relative;
+    /*疑似要素使用のため*/
+    text-decoration: none;
+    /*標準時の下線を削除*/
 }
 
 .nav-list-item:not(:last-child) a:after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%; /*下線の幅*/
-  height: 4px; /*下線の太さ*/
-  background: black;
-  visibility: hidden; /*非表示*/
-  opacity: 0; /*透明*/
-  transition: .3s;
-  background-color: white;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    /*下線の幅*/
+    height: 4px;
+    /*下線の太さ*/
+    background: black;
+    visibility: hidden;
+    /*非表示*/
+    opacity: 0;
+    /*透明*/
+    transition: .3s;
+    background-color: white;
 }
 
 .nav-list-item:not(:last-child) a:hover::after {
-   visibility: visible; /*表示*/
-   opacity: 1; /*不透明に*/
-   background-color: white;
+    visibility: visible;
+    /*表示*/
+    opacity: 1;
+    /*不透明に*/
+    background-color: white;
 }
 
 .contact-button {
@@ -126,7 +150,7 @@ nav > :first-child {
     padding-top: 90px;
     color: #F9F9F9;
     text-align: center;
-    font-family: Raleway;
+    font-family: "Raleway";
     font-size: 72px;
     font-style: normal;
     font-weight: 700;
@@ -139,11 +163,12 @@ nav > :first-child {
     margin: 0 auto;
     font-size: 18px;
     line-height: 200%;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 
 /* .mainをmainに変更して、専用タグのmainを指定するように設定する。 */
+
 main {
     width: 100%;
     padding-bottom: 128px;
@@ -158,14 +183,13 @@ main {
 
 .contents_inner {
     padding-top: 128px;
-    margin-top:-128px;   
+    margin-top: -128px;
 }
 
 .case:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
+    padding-bottom: 0;
+    border-bottom: none;
 }
-
 
 .workscase {
     width: 704px;
@@ -190,7 +214,7 @@ main {
     width: 65px;
     color: #414141;
     text-align: center;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -200,26 +224,24 @@ main {
 
 .number {
     width: 65px;
-    color: var(--text-black, #414141);
+    color: #414141;
     text-align: center;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
 }
 
-
 .workstitle {
     width: 570px;
     height: 112px;
 }
 
-
 h4 {
     width: 560px;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
+    color: #414141;
+    font-family: "Noto Sans JP";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -228,25 +250,23 @@ h4 {
 
 .category {
     width: 560px;
-    color: var(--text-gray, #909090);
-    font-family: Noto Sans JP;
+    color: #909090;
+    font-family: "Noto Sans JP";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
 }
 
-
 .workbody {
     padding-top: 32px;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
+    color: #414141;
+    font-family: "Noto Sans JP";
     font-size: 15.5px;
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
 }
-
 
 .image-box {
     width: 704px;
@@ -256,7 +276,6 @@ h4 {
     background-position: center;
     margin-top: 24px;
 }
-
 
 .work1-image {
     background-image: url(../img/work1-image.png);
@@ -288,7 +307,6 @@ h4 {
     height: 704px;
 }
 
-
 .view-all {
     width: 224px;
     margin: 0 auto;
@@ -303,7 +321,7 @@ h4 {
     font-weight: 700;
     line-height: 180%;
     text-decoration: none;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     font-style: normal;
 }
 
@@ -312,7 +330,6 @@ h4 {
     color: #F9F9F9;
     transition: 0.3s;
 }
-
 
 footer {
     width: 100%;
@@ -341,7 +358,7 @@ footer {
     font-size: 20px;
     font-weight: 700;
     line-height: 145%;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 .contact-link:hover {
@@ -357,8 +374,8 @@ footer {
 }
 
 footer img {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .footer_border_line {
@@ -370,14 +387,16 @@ footer img {
 
 .footer-text {
     color: #F9F9F9;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
 }
 
+
 /* 追従ボタン */
+
 .fixed_btn {
     position: fixed;
     bottom: 20px;
@@ -395,10 +414,9 @@ footer img {
 }
 
 .show {
-  visibility: show;
+    visibility: visible;
 }
 
 .hide {
-  visibility: hidden;
+    visibility: hidden;
 }
-

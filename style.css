@@ -1,88 +1,112 @@
 @charset "utf-8";
 
 /* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
-header{
-  width: 100%; /* 横幅100% */
-  height: 70px; /* 高さ70px */
-  background-color: #EC715F; /* 背景色をカラーコードで指定 */
-  /* 固定 */
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
+header {
+    width: 100%;
+    /* 横幅100% */
+    height: 70px;
+    /* 高さ70px */
+    background-color: #EC715F;
+    /* 背景色をカラーコードで指定 */
+    /* 固定 */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
 }
 
-.heading img{
-  height: 60px;
+.heading img {
+    height: 60px;
 }
 
-nav{
-  height: 70px; /* 高さ70px */
-  margin: 0 auto;  /* 中央寄せ */
-  display: flex; /* flexboxを設定 */
-  justify-content: flex-end; /* 子要素を右詰めで順に並べるように設定する */
+nav {
+    height: 70px;
+    /* 高さ70px */
+    margin: 0 auto;
+    /* 中央寄せ */
+    display: flex;
+    /* flexboxを設定 */
+    justify-content: flex-end;
+    /* 子要素を右詰めで順に並べるように設定する */
 }
 
-nav > :first-child {
+nav> :first-child {
     margin-right: auto;
     width: 214px;
     height: 65px;
     padding-top: 5px;
 }
 
-.nav-list{
-  width: 560px; /* 横幅560px */
-  display: flex; /* flexboxを設定 */
-  justify-content: flex-end; /* 要素を右詰めで順に並べるように設定する */
+.nav-list {
+    width: 560px;
+    /* 横幅560px */
+    display: flex;
+    /* flexboxを設定 */
+    justify-content: flex-end;
+    /* 要素を右詰めで順に並べるように設定する */
 }
 
-.nav-list-item{
-  margin: 0 30px; /* 上下に0pxの隙間、左右に30pxずつの隙間を発生させる。 */
-  list-style: none; /* li使用時に発生する黒丸を削除 */
-  line-height: 70px; /* 行の高さを70pxに設定し、縦方向に中央寄せで文字を配置する */
-  text-align: center; /* 横方向に中央寄せで文字を配置する。*/
-  color: white; /* 文字色を白に変更 */
+.nav-list-item {
+    margin: 0 30px;
+    /* 上下に0pxの隙間、左右に30pxずつの隙間を発生させる。 */
+    list-style: none;
+    /* li使用時に発生する黒丸を削除 */
+    line-height: 70px;
+    /* 行の高さを70pxに設定し、縦方向に中央寄せで文字を配置する */
+    text-align: center;
+    /* 横方向に中央寄せで文字を配置する。*/
+    color: white;
+    /* 文字色を白に変更 */
 }
 
 .nav-list-item a {
     text-decoration: none;
     color: white;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 .nav-list-item a {
-  position: relative; /*疑似要素使用のため*/
-  text-decoration: none; /*標準時の下線を削除*/
+    position: relative;
+    /*疑似要素使用のため*/
+    text-decoration: none;
+    /*標準時の下線を削除*/
 }
 
 .nav-list-item:not(:last-child) a:after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%; /*下線の幅*/
-  height: 4px; /*下線の太さ*/
-  background: black;
-  visibility: hidden; /*非表示*/
-  opacity: 0; /*透明*/
-  transition: .3s;
-  background-color: white;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    /*下線の幅*/
+    height: 4px;
+    /*下線の太さ*/
+    background: black;
+    visibility: hidden;
+    /*非表示*/
+    opacity: 0;
+    /*透明*/
+    transition: .3s;
+    background-color: white;
 }
 
 .nav-list-item:not(:last-child) a:hover::after {
-   visibility: visible; /*表示*/
-   opacity: 1; /*不透明に*/
-   background-color: white;
+    visibility: visible;
+    /*表示*/
+    opacity: 1;
+    /*不透明に*/
+    background-color: white;
 }
 
 .contact-button {
@@ -101,12 +125,17 @@ nav > :first-child {
     transition: 0.3s
 }
 
-.main-visual{ 
-  width: 100%; /* 横幅いっぱい */
-  height: 650px; /* 高さ650px */
-  background-image: url(img/mv.png); /* 背景画像を設定、imgフォルダ内のmv.pngを使用 */
-  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
-  background-position: center; /* 背景画像を中央に配置 */ 
+.main-visual {
+    width: 100%;
+    /* 横幅いっぱい */
+    height: 650px;
+    /* 高さ650px */
+    background-image: url(img/mv.png);
+    /* 背景画像を設定、imgフォルダ内のmv.pngを使用 */
+    background-size: cover;
+    /* 縦横比を維持したまま背景領域を埋め尽くす */
+    background-position: center;
+    /* 背景画像を中央に配置 */
 }
 
 .main-visual-text {
@@ -134,12 +163,15 @@ nav > :first-child {
     margin: 0 auto;
     font-size: 18px;
     line-height: 200%;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
+
 /* .mainをmainに変更して、専用タグのmainを指定するように設定する。 */
-main{
-  width: 100%; /* 横幅いっぱい */
+
+main {
+    width: 100%;
+    /* 横幅いっぱい */
 }
 
 .works {
@@ -182,28 +214,34 @@ h2 {
     background-position: center;
 }
 
-.desk{
-    background-image: url(img/sketch.jpg); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
+.desk {
+    background-image: url(img/sketch.jpg);
+    /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
 }
 
-.pc-blue{
-    background-image: url(img/websuku.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
+.pc-blue {
+    background-image: url(img/websuku.png);
+    /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
 }
 
-.write-board{
-    background-image: url(img/write.jpg); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
+.write-board {
+    background-image: url(img/write.jpg);
+    /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
 }
 
-.pc-yellow{
-    background-image: url(img/webcamp.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
+.pc-yellow {
+    background-image: url(img/webcamp.png);
+    /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
 }
 
-.talk{
-    background-image: url(img/talk.jpg); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
+.talk {
+    background-image: url(img/talk.jpg);
+    /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
 }
 
-.pc-pink{
-    background-image: url(img/webcamp-mother.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
+.pc-pink {
+    background-image: url(img/webcamp-mother.png);
+    /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
 }
 
 .view-all {
@@ -220,7 +258,7 @@ h2 {
     font-weight: 700;
     line-height: 180%;
     text-decoration: none;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     font-style: normal;
 }
 
@@ -246,7 +284,7 @@ h2 {
     width: 800px;
     height: 145px;
     margin: 64px auto 0;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 .profile-contents {
@@ -273,18 +311,17 @@ h2 {
     text-align: left;
 }
 
-
 h3 {
     color: #414141;
     font-size: 20px;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 .name {
     margin-top: 21px;
     margin-bottom: 32px;
     color: #414141;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     line-height: 180%;
 }
 
@@ -293,7 +330,7 @@ h3 {
     margin-bottom: 32px;
     color: #414141;
     line-height: 180%;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 .blogs {
@@ -310,7 +347,7 @@ h3 {
     text-align: left;
     color: #909090;
     line-height: 180%;
-    font-family: Noto Sans CJK JP;
+    font-family: "Noto Sans CJK JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -320,7 +357,6 @@ h3 {
 .view-all-blogs:hover {
     color: #909090;
 }
-
 
 .blogs-contents {
     display: flex;
@@ -368,41 +404,47 @@ h3 {
     font-weight: 700;
     line-height: 145%;
     text-align: left;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
-.blog1{
-    background-image: url(img/blog1.png); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
+.blog1 {
+    background-image: url(img/blog1.png);
+    /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
     width: 272px;
     height: 177px;
 }
 
-.blog2{
-    background-image: url(img/blog2.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
+.blog2 {
+    background-image: url(img/blog2.png);
+    /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
     width: 272px;
     height: 177px;
 }
 
-.blog3{
-    background-image: url(img/blog3.png); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
+.blog3 {
+    background-image: url(img/blog3.png);
+    /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
     width: 272px;
     height: 177px;
 }
 
-.blog4{
-    background-image: url(img/blog4.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
+.blog4 {
+    background-image: url(img/blog4.png);
+    /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
     width: 272px;
     height: 177px;
 }
 
-.blog5{
-    background-image: url(img/blog5.png); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
+.blog5 {
+    background-image: url(img/blog5.png);
+    /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
     width: 272px;
     height: 177px;
 }
 
-.blog6{
-    background-image: url(img/blog6.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
+.blog6 {
+    background-image: url(img/blog6.png);
+    /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
     width: 272px;
     height: 177px;
 }
@@ -434,7 +476,7 @@ footer {
     font-size: 20px;
     font-weight: 700;
     line-height: 145%;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
 }
 
 .contact-link:hover {
@@ -450,8 +492,8 @@ footer {
 }
 
 footer img {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .footer_border_line {
@@ -463,14 +505,16 @@ footer img {
 
 .footer-text {
     color: #F9F9F9;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 180%;
 }
 
+
 /* 追従ボタン */
+
 .fixed_btn {
     position: fixed;
     bottom: 20px;
@@ -488,10 +532,9 @@ footer img {
 }
 
 .show {
-  visibility: show;
+    visibility: visible;
 }
 
 .hide {
-  visibility: hidden;
+    visibility: hidden;
 }
-
