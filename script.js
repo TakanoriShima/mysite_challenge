@@ -63,3 +63,14 @@ $(function() {
     
   });
 });
+
+// スクロール量が1000pxを超えた際にボタンを表示
+$(window).scroll(function() {
+  let scroll = $(this).scrollTop();
+  console.log(scroll);
+  if(scroll >= 1000){
+    $('.fixed_btn').toggleClass('show').removeClass('hide');
+  }else{
+    $('.fixed_btn').addClass('hide').removeClass('show');
+  }
+ });
