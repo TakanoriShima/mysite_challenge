@@ -70,3 +70,10 @@ $(window).scroll(function() {
         $('.fixed_btn').addClass('hide').removeClass('show');
     }
 });
+
+// ハンバーガー
+$(function() {
+    $(".nav_toggle").on("click", function () {
+        $(".nav_toggle, .nav").toggleClass("show");
+    });
+});

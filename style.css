@@ -538,3 +538,189 @@ footer img {
 .hide {
     visibility: hidden;
 }
+
+
+.pc-logo {
+    display: block;
+}
+
+.sm-logo {
+    display: none;
+}
+
+/* =========================
+ハンバーガーメニューの実装
+=========================== */
+#drawer_input {
+    display: none;
+}
+
+.drawer_open {
+    display: none;
+}
+
+/*スマホ用*/
+@media screen and (max-width: 480px) {
+    
+    html, body, header, nav, main, .main-visual, .main-visual-text, .works, footer {
+        width: 100%;
+    }
+    
+    body {
+        padding-top: 0;
+    }
+    
+    .pc-logo {
+        display: none;
+    }
+    
+    .sm-logo {
+        display: block;
+    }
+    
+    
+    /* =========================
+    ハンバーガーメニュー
+    =========================== */
+    .nav-list {
+        padding: 0;
+        display: block;
+    }
+    
+    /* チェックボックスを非表示にする */
+    .drawer_hidden {
+        display: none;
+    }
+    
+    /* ハンバーガーアイコンの設置スペース */
+    .drawer_open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 30px;
+        z-index: 100;
+        cursor: pointer;
+        top: 35px;
+    }
+    
+    /* ハンバーガーメニューのアイコン */
+    .drawer_open span, .drawer_open span:before, .drawer_open span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 35px;
+        border-radius: 3px;
+        background: #F9F9F9;
+        transition: 0.5s;
+        position: absolute;
+    }
+    
+    /* 三本線の一番上の棒の位置調整 */
+    .drawer_open span:before {
+        bottom: 8px;
+    }
+    
+    /* 三本線の一番下の棒の位置調整 */
+    .drawer_open span:after {
+        top: 8px;
+    }
+    
+     /*アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer_input:checked~.drawer_open span {
+        background: rgba(255, 255, 255, 0);
+    }
+    
+     /*アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    #drawer_input:checked~.drawer_open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    
+    #drawer_input:checked~.drawer_open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    /* メニューのデザイン*/
+    nav {
+        height: 100%;
+        position: fixed;
+        bottom: 0;
+        left: -100%;
+        top: 70px;
+        z-index: 99;
+        background: #EC715F;
+        transition: .5s;
+        text-align: center;
+    }
+    
+    .nav-list-item {
+        height: 80px;
+        width: 79px;
+        margin: 0 auto;
+    }
+    
+    .nav-list-item:first-child {
+       margin-top: 16px;
+    } 
+    
+    .nav-list-item:last-child {
+        width: 200px;
+        margin: 0 auto;
+        bottom: 70px;
+        position: absolute;
+        left: 50%;
+        /* transform: translate(-50%, -50%); */
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    
+    .nav-list-item a {
+        color: #F9F9F9;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Noto Sans JP";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 145%;
+    }
+    
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer_input:checked~nav {
+        bottom: 0;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        height: 100%;
+    }
+    
+    .contact-button {
+        display: flex;
+        height: 60px;
+        padding: 24px 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        background: #F9F9F9;
+    }
+    
+    a.contact-button {
+        color: #EC715F;
+        text-align: center;
+        font-family: "Noto Sans JP";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 145%;
+    }
+    
+    
+}
+
+
+
+
+
