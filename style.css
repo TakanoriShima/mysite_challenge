@@ -710,7 +710,6 @@ footer img {
     a.contact-button {
         color: #EC715F;
         text-align: center;
-        font-family: "Noto Sans JP";
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
@@ -732,7 +731,6 @@ footer img {
         margin: 0 auto;
         font-size: 17px;
         line-height: 150%;
-        font-family: "Noto Sans JP";
         padding: 0 30px 0 30px;
     }
     

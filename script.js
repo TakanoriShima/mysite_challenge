@@ -16,6 +16,43 @@ $(function(){
     });
 });
 
+
+// 入力ボックス入力中
+$(function() {
+    
+    $('#name').attr('style', "background-color: #FFF");
+    $('#email').attr('style', "background-color: #FFF");
+    $('content').attr('style', "background-color: #FFF");
+    
+    
+    $('#name').on('input', function(){
+        console.log('input');
+        $('#name').attr('style', "background-color: #3160e014;border: solid 1px #888");
+    });
+    $('#email').on('input', function(){
+        console.log('input');
+        $('#email').attr('style', "background-color: #3160e014;border: solid 1px #888");
+    });
+    $('#content').on('input', function(){
+        console.log('input');
+        $('#content').attr('style', "background-color: #3160e014;border: solid 1px #888");
+    });
+});
+   
+// IE 9+
+// $(function() {
+// //   var $input = $('#input');
+// //   var $output = $('#output');
+//   $input.on('input', function(event) {
+
+//   });
+  
+  
+//   var $output2 = $('#output2');
+//   $input.on('change', function(event) {
+//   	$output2.text($input.val());
+//   });
+// });   
 // お問い合わせフォームの入力チェック
 $(function() {
     $('button').on('click', function(){

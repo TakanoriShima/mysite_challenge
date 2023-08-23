@@ -8,8 +8,13 @@
     box-sizing: border-box;
 }
 
+.width_704px {
+    width: 704px;
+    margin: 0 auto;
+}
+
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
@@ -71,16 +76,14 @@ nav> :first-child {
 }
 
 .nav-list-item a {
-    text-decoration: none;
-    color: white;
-    font-family: "Noto Sans JP";
-}
-
-.nav-list-item a {
     position: relative;
-    /*疑似要素使用のため*/
     text-decoration: none;
-    /*標準時の下線を削除*/
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
 }
 
 .nav-list-item:not(:last-child) a:after {
@@ -127,6 +130,55 @@ nav> :first-child {
 
 .main-visual {
     width: 100%;
+    /* 横幅いっぱい */
+    height: 650px;
+    /* 高さ650px */
+    background-image: url(img/mv.png);
+    /* 背景画像を設定、imgフォルダ内のmv.pngを使用 */
+    background-size: cover;
+    /* 縦横比を維持したまま背景領域を埋め尽くす */
+    background-position: center;
+    /* 背景画像を中央に配置 */
+}
+
+.main-visual-text {
+    width: 960px;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.first-char {
+    color: #EC715F;
+}
+
+.main-visual-title {
+    font-family: Raleway;
+    padding-top: 256px;
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.main-visual-subtitle {
+    font-family: Raleway;
+    width: 784px;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 200%;
+}
+
+
+.main-visual {
+    width: 100%;
     height: 250px;
     background-image: url(../img/mv.png);
     background-size: cover;
@@ -163,7 +215,6 @@ nav> :first-child {
     margin: 0 auto;
     font-size: 18px;
     line-height: 200%;
-    font-family: "Noto Sans JP";
 }
 
 
@@ -176,15 +227,21 @@ main {
 }
 
 .case {
-    border-bottom: solid 1px #E4E4E4;
+    border-bottom: solid 1px #D2D2D2;
     padding-bottom: 96px;
+    /*width: 704px;*/
+    /*margin: 0 auto;*/
     padding-top: 96px;
 }
 
-.contents_inner {
-    padding-top: 128px;
-    margin-top: -128px;
+.case:first-child {
+    padding-top: 0;
 }
+
+/*.contents_inner {*/
+/*    padding-top: 128px;*/
+/*    margin-top: -128px;*/
+/*}*/
 
 .case:last-child {
     padding-bottom: 0;
@@ -192,9 +249,9 @@ main {
 }
 
 .workscase {
-    width: 704px;
+    /*width: 704px;*/
     height: 260px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 .workshead {
@@ -206,15 +263,14 @@ main {
     padding: 0 20px;
     width: 105px;
     height: 80px;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
+    border-left: solid 1px #909090;
+    border-right: solid 1px #909090;
 }
 
 .example {
     width: 65px;
     color: #414141;
     text-align: center;
-    font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -226,7 +282,6 @@ main {
     width: 65px;
     color: #414141;
     text-align: center;
-    font-family: "Noto Sans JP";
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -241,17 +296,16 @@ main {
 h4 {
     width: 560px;
     color: #414141;
-    font-family: "Noto Sans JP";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 145%;
+    margin-bottom: 12px;
 }
 
 .category {
     width: 560px;
     color: #909090;
-    font-family: "Noto Sans JP";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -261,7 +315,6 @@ h4 {
 .workbody {
     padding-top: 32px;
     color: #414141;
-    font-family: "Noto Sans JP";
     font-size: 15.5px;
     font-style: normal;
     font-weight: 400;
@@ -321,7 +374,6 @@ h4 {
     font-weight: 700;
     line-height: 180%;
     text-decoration: none;
-    font-family: "Noto Sans JP";
     font-style: normal;
 }
 
@@ -332,42 +384,43 @@ h4 {
 }
 
 footer {
-    width: 100%;
-    height: 412px;
-    text-align: center;
-    line-height: 60px;
+    height: 290px;
+    color: #FFF;
     background-color: #EC715F;
     display: flex;
-    padding: 28px 0px 16px 0px;
-    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 36px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contact-link {
-    text-decoration: none;
-    display: flex;
     height: 60px;
-    padding: 24px 100px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 30px;
-    background: #F9F9F9;
     color: #EC715F;
+    background: #F9F9F9;
+    display: flex;
+    text-decoration: none;
+    border-radius: 30px;
     font-size: 20px;
     font-weight: 700;
     line-height: 145%;
-    font-family: "Noto Sans JP";
+    padding: 24px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
 }
 
 .contact-link:hover {
     color: #EC715F;
+    background: #f9f9f985;
+    transition: 0.5s;
 }
 
 .sns {
     display: flex;
-    padding: 40px 0px;
+    padding: 32px 0px;
     justify-content: center;
     align-items: flex-start;
     gap: 60px;
@@ -379,7 +432,7 @@ footer img {
 }
 
 .footer_border_line {
-    width: 100%;
+    width: 1440px;
     height: 1px;
     opacity: 0.3;
     background: #F9F9F9;
@@ -387,11 +440,10 @@ footer img {
 
 .footer-text {
     color: #F9F9F9;
-    font-family: "Noto Sans JP";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 180%;
+    line-height: 145%;
 }
 
 
@@ -400,13 +452,7 @@ footer img {
 .fixed_btn {
     position: fixed;
     bottom: 20px;
-    right: 75px;
-    padding: 15px 15px;
-    background-color: #00000038;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    border: solid 1px #FFF;
+    right: 50px;
 }
 
 .fixed_btn img {
@@ -419,4 +465,13 @@ footer img {
 
 .hide {
     visibility: hidden;
+}
+
+
+.pc-logo {
+    display: block;
+}
+
+.sm-logo {
+    display: none;
 }
