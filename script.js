@@ -116,3 +116,15 @@ $(function() {
     $('#drawer_input').prop('checked', false);
   });
 });
+
+
+// アコーディオン
+$(function() {
+  // console.log('OK');
+  $('#more').on('click', function(event) {
+    console.log('clicked');
+    // $('#drawer_input').prop('checked', false);
+    $('.blog-cart:nth-child(n + 4) ').toggleClass('none');
+    $('#more').addClass('none');
+  });
+});
