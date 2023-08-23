@@ -126,5 +126,6 @@ $(function() {
     // $('#drawer_input').prop('checked', false);
     $('.blog-cart:nth-child(n + 4) ').toggleClass('none');
     $('#more').addClass('none');
+    $('.blog-cart:nth-child(3)').attr('style', 'margin-bottom: 48px;')
   });
 });
