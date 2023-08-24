@@ -585,9 +585,31 @@ footer img {
         margin: 0;
         height: 70px;
     }
-    #more {
-        display: block;
-    }
+#more {
+    /* display: block; */
+    /* position: fixed; */
+    /* bottom: 30px; */
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #1C1C1C;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+    
+.arrow {
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(135deg);
+    /* margin-top: 0px; */
+}
+    
+    
     .heading a {
         display: block;
         padding-top: 7px;
