@@ -644,7 +644,7 @@ footer img {
     margin: 0 auto;
     margin-bottom: 96px;
     width: 420px;
-    height: 100px;
+    height: 166px;
     margin-top: 56px;
     margin-bottom: 0;
 }
@@ -730,8 +730,7 @@ h4 {
     height: 17px;
     margin: 0;
 }
-
-.blog:last-child {
+.blog:first-child {
     margin-top: 0;
 }
 
