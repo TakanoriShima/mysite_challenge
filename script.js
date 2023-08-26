@@ -32,7 +32,7 @@ $(function() {
 
     $('#close').on('click', function() {
         $('.blog-cart:nth-child(n + 4) ').toggleClass('none');
-        $('#more').toggleClass('none');
+        $('#more').toggleClass('none'); 
         $('#close').toggleClass('none');
     });
 });
@@ -43,8 +43,7 @@ $(function() {
     
     $('#name').attr('style', "background-color: #FFF");
     $('#email').attr('style', "background-color: #FFF");
-    $('content').attr('style', "background-color: #FFF");
-    
+    $('#content').attr('style', "background-color: #FFF");
     
     $('#name').on('input', function(){
         console.log('input');
@@ -57,6 +56,11 @@ $(function() {
     $('#content').on('input', function(){
         console.log('input');
         $('#content').attr('style', "background-color: #3160e014;border: solid 1px #888");
+    });
+    $('.modal_overlay').on('click', function(){
+        $('#name').attr('style', "background-color: #FFF");
+        $('#email').attr('style', "background-color: #FFF");
+        $('#content').attr('style', "background-color: #FFF");
     });
 });
    

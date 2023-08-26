@@ -18,6 +18,7 @@ header {
     width: 100%;
     background-color: #EC715F;
     position: fixed;
+    z-index: 100;
 }
 
 .heading img {
@@ -108,10 +109,6 @@ nav> :first-child {
     width: 960px;
     height: 650px;
     margin: 0 auto;
-}
-
-.first-char {
-    color: #EC715F;
 }
 
 .main-visual-title {
@@ -378,7 +375,6 @@ h3 {
     height: 177px;
 }
 
-
 /* =========================
           footer
 =========================== */
@@ -472,10 +468,6 @@ footer img {
 #more {
     display: none;
 }
-
-/*#close {*/
-/*    display: none;*/
-/*}*/
 
 .pc-logo {
     display: block;
@@ -580,27 +572,47 @@ footer img {
         display: block;
     }
     
+   /* =========================
+    ハンバーガーメニュー
+    =========================== */
+    
+    .nav-list {
+        padding: 0;
+        display: block;
+    }
+    
+    /* チェックボックスを非表示にする */
+    .drawer_hidden {
+        display: none;
+    }
+    
+    /* ハンバーガーアイコンの設置スペース */
     .drawer_open {
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 0px;
-        right: 0;
-        width: 70px;
-        height: 70px;
+        z-index: 100;
+        cursor: pointer;
+        top: 18px;
+        right: 26px;
+        width: 40px;
+        height: 40px;
     }
-    
+        
+    /* ハンバーガーメニューのアイコン */
     .drawer_open span, .drawer_open span:before, .drawer_open span:after {
         content: '';
+        display: block;
         height: 3px;
         width: 35px;
-        border-radius: 30px;
+        border-radius: 3px;
         background: #F9F9F9;
         transition: 0.5s;
         position: absolute;
     }
     
+    /* 三本線の一番上の棒の位置調整 */
     .drawer_open span:before {
         bottom: 10px;
     }
@@ -622,7 +634,6 @@ footer img {
         top: 0;
         transform: rotate(-45deg);
     }
-    
     nav {
         height: 100%;
         position: fixed;
