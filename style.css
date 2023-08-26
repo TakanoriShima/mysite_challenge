@@ -440,7 +440,7 @@ footer img {
     position: fixed;
     bottom: 60px;
     right: 22px;
-    background: var(--text-black, #414141);
+    background: #414141;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -559,7 +559,7 @@ footer img {
     }
     
     /* =========================
-      header
+             header
     =========================== */
     
     .heading a {
@@ -572,8 +572,8 @@ footer img {
         display: block;
     }
     
-   /* =========================
-    ハンバーガーメニュー
+    /* =========================
+          hamburger menu
     =========================== */
     
     .nav-list {
@@ -581,12 +581,10 @@ footer img {
         display: block;
     }
     
-    /* チェックボックスを非表示にする */
     .drawer_hidden {
         display: none;
     }
     
-    /* ハンバーガーアイコンの設置スペース */
     .drawer_open {
         display: flex;
         justify-content: center;
@@ -600,7 +598,6 @@ footer img {
         height: 40px;
     }
         
-    /* ハンバーガーメニューのアイコン */
     .drawer_open span, .drawer_open span:before, .drawer_open span:after {
         content: '';
         display: block;
@@ -612,7 +609,6 @@ footer img {
         position: absolute;
     }
     
-    /* 三本線の一番上の棒の位置調整 */
     .drawer_open span:before {
         bottom: 10px;
     }
@@ -634,6 +630,7 @@ footer img {
         top: 0;
         transform: rotate(-45deg);
     }
+    
     nav {
         height: 100%;
         position: fixed;
