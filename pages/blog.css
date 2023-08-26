@@ -1,15 +1,8 @@
 @charset "utf-8";
-
-/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Noto Sans JP';
 }
 
 .width-704px {
@@ -17,18 +10,21 @@ body {
     margin: 0 auto;
 }
 
+body {
+    font-family: 'Noto Sans JP';
+}
+
+
+/* =========================
+          header
+=========================== */
+
 header {
     width: 100%;
-    /* 横幅100% */
-    height: 70px;
-    /* 高さ70px */
     background-color: #EC715F;
-    /* 背景色をカラーコードで指定 */
-    /* 固定 */
     position: fixed;
-    z-index: 999;
+    z-index: 100;
     top: 0;
-    left: 0;
 }
 
 .heading img {
@@ -37,13 +33,9 @@ header {
 
 nav {
     height: 70px;
-    /* 高さ70px */
     margin: 0 auto;
-    /* 中央寄せ */
     display: flex;
-    /* flexboxを設定 */
     justify-content: flex-end;
-    /* 子要素を右詰めで順に並べるように設定する */
 }
 
 nav> :first-child {
@@ -55,24 +47,16 @@ nav> :first-child {
 
 .nav-list {
     width: 560px;
-    /* 横幅560px */
     display: flex;
-    /* flexboxを設定 */
     justify-content: flex-end;
-    /* 要素を右詰めで順に並べるように設定する */
 }
 
 .nav-list-item {
     margin: 0 30px;
-    /* 上下に0pxの隙間、左右に30pxずつの隙間を発生させる。 */
     list-style: none;
-    /* li使用時に発生する黒丸を削除 */
     line-height: 70px;
-    /* 行の高さを70pxに設定し、縦方向に中央寄せで文字を配置する */
     text-align: center;
-    /* 横方向に中央寄せで文字を配置する。*/
     color: white;
-    /* 文字色を白に変更 */
 }
 
 .nav-list-item a {
@@ -92,23 +76,17 @@ nav> :first-child {
     bottom: -4px;
     left: 0;
     width: 100%;
-    /*下線の幅*/
     height: 4px;
-    /*下線の太さ*/
     background: black;
     visibility: hidden;
-    /*非表示*/
     opacity: 0;
-    /*透明*/
     transition: .3s;
     background-color: white;
 }
 
 .nav-list-item:not(:last-child) a:hover::after {
     visibility: visible;
-    /*表示*/
     opacity: 1;
-    /*不透明に*/
     background-color: white;
 }
 
@@ -128,100 +106,12 @@ nav> :first-child {
     transition: 0.3s
 }
 
-.main-visual {
-    width: 100%;
-    /* 横幅いっぱい */
-    height: 650px;
-    /* 高さ650px */
-    background-image: url(img/mv.png);
-    /* 背景画像を設定、imgフォルダ内のmv.pngを使用 */
-    background-size: cover;
-    /* 縦横比を維持したまま背景領域を埋め尽くす */
-    background-position: center;
-    /* 背景画像を中央に配置 */
-}
 
-.main-visual-text {
-    width: 960px;
-    height: 650px;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-}
-
-.main-visual-title {
-    font-family: Raleway;
-    padding-top: 256px;
-    color: #F9F9F9;
-    text-align: center;
-    font-size: 120px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-}
-
-.main-visual-subtitle {
-    font-family: Raleway;
-    width: 784px;
-    margin: 0 auto;
-    color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 200%;
-}
+/* =========================
+        main-visual
+=========================== */
 
 .main-visual {
-    width: 100%;
-    /* 横幅いっぱい */
-    height: 650px;
-    /* 高さ650px */
-    background-image: url(img/mv.png);
-    /* 背景画像を設定、imgフォルダ内のmv.pngを使用 */
-    background-size: cover;
-    /* 縦横比を維持したまま背景領域を埋め尽くす */
-    background-position: center;
-    /* 背景画像を中央に配置 */
-}
-
-.main-visual-text {
-    width: 960px;
-    height: 650px;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-}
-
-.first-char {
-    color: #EC715F;
-}
-
-.main-visual-title {
-    font-family: Raleway;
-    padding-top: 256px;
-    color: #F9F9F9;
-    text-align: center;
-    font-size: 120px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-}
-
-.main-visual-subtitle {
-    font-family: Raleway;
-    width: 784px;
-    margin: 0 auto;
-    color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 200%;
-}
-
-.main-visual {
-    width: 100%;
     height: 250px;
     background-image: url(../img/mv.png);
     background-size: cover;
@@ -230,38 +120,24 @@ nav> :first-child {
 }
 
 .main-visual-text {
-    /*width: 960px;*/
-    /*height: 650px;*/
-    /*margin: 0 auto;*/
-    /*text-align: center;*/
-    /*color: white;*/
-}
-
-.first-char {
-    color: #EC715F;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .main-visual-title {
     padding-top: 90px;
     color: #F9F9F9;
     text-align: center;
-    font-family: Raleway;
+    font-family: "Raleway";
     font-size: 72px;
-    font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    margin-bottom: 0;
-}
-
-.main-visual-subtitle {
-    width: 784px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 200%;
 }
 
 
-/* .mainをmainに変更して、専用タグのmainを指定するように設定する。 */
+/* =========================
+          blog
+=========================== */
 
 main {
     width: 100%;
@@ -270,8 +146,6 @@ main {
 }
 
 .blog {
-    /* width: 704px; */
-    margin: 0 auto;
     padding-bottom: 96px;
     border-bottom: solid 1px #D2D2D2;
 }
@@ -285,10 +159,7 @@ main {
 }
 
 .vertical-line {
-    display: flex;
     width: 6px;
-    align-items: flex-start;
-    gap: 10px;
     border-radius: 5px;
     background: #EC715F;
     height: 100%;
@@ -303,7 +174,6 @@ main {
 h3 {
     color: #414141;
     font-size: 30px;
-    font-style: normal;
     font-weight: 700;
     line-height: 145%;
     margin-bottom: 16px;
@@ -314,25 +184,17 @@ h3 {
 
 .datetime {
     color: #EC715F;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 180%;
     margin-bottom: 20px;
 }
 
 .image-box {
-    width: 704px;
     height: 704px;
-    margin: 0 auto;
     margin: 56px 0;
-    background-size: cover;
-    background-position: center;
-} 
+}
 
 .blog1-image {
     background-image: url(../img/blog1-large-image.png);
-    height: 704px;
 }
 
 .blog2-image {
@@ -345,8 +207,6 @@ h3 {
     color: #888;
     font-family: Inter;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 160%;
     margin-bottom: 56px;
 }
@@ -355,11 +215,14 @@ h3 {
     color: #888;
     font-family: Inter;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 160%;
     margin-bottom: 0;
 }
+
+
+/* =========================
+          recommend
+=========================== */
 
 .recommend {
     width: 960px;
@@ -369,25 +232,17 @@ h3 {
 
 .recomemnd-headding {
     color: #414141;
-    font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 145%;
     margin-bottom: 6px;
 }
 
 .recommend-blogs {
-    width: 960px;
-    height: 319px;
     display: inline-flex;
-    align-items: flex-start;
-    align-content: flex-start;
     gap: 64px 72px;
-    flex-wrap: wrap;
 }
 
 .card {
-    width: 272px;
     height: 319px;
     border: none;
 }
@@ -401,14 +256,11 @@ h3 {
 
 .recommend-blog-caption {
     width: 272px;
-    height: 130px;
 }
 
 .recomemnd-blog-datetime {
     color: #EC715F;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 180%;
     display: flex;
     width: 258px;
@@ -421,7 +273,6 @@ h3 {
 .recommend-blog-title {
     color: #414141;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 145%;
 }
@@ -445,9 +296,6 @@ h3 {
 
 .description {
     color: #414141;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 180%;
     margin-bottom: 56px;
 }
@@ -496,29 +344,6 @@ h4 {
     -webkit-line-clamp: 2;
 }
 
-.view-all {
-    width: 224px;
-    margin: 0 auto;
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    color: #F9F9F9;
-    background: #1C1C1C;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 180%;
-    text-decoration: none;
-    font-style: normal;
-}
-
-.view-all:hover {
-    background: #1c1c1c7d;
-    color: #F9F9F9;
-    transition: 0.3s;
-}
-
 footer {
     height: 290px;
     color: #FFF;
@@ -526,7 +351,6 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 0px;
     flex-direction: column;
     gap: 20px;
 }
@@ -542,10 +366,7 @@ footer {
     font-weight: 700;
     line-height: 145%;
     padding: 24px 100px;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
 }
 
 .contact-link:hover {
@@ -557,8 +378,6 @@ footer {
 .sns {
     display: flex;
     padding: 32px 0px;
-    justify-content: center;
-    align-items: flex-start;
     gap: 60px;
 }
 
@@ -568,7 +387,7 @@ footer img {
 }
 
 .footer_border_line {
-    width: 1440px;
+    width: 100%;
     height: 1px;
     opacity: 0.3;
     background: #F9F9F9;
@@ -577,44 +396,34 @@ footer img {
 .footer-text {
     color: #F9F9F9;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 145%;
 }
 
 
-/* 追従ボタン */
+/* =========================
+        upper-button
+=========================== */
 
 .fixed_btn {
     position: fixed;
     bottom: 60px;
     right: 22px;
-    background: var(--text-black, #414141);
-    display: block;
+    background: #414141;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
 .fixed_btn img {
-    width: 40px;
     width: 18px;
     height: 8px;
     margin-top: 20px;
     margin-left: 16px;
 }
 
-.show {
-    visibility: visible;
-}
 
-.hide {
-    visibility: hidden;
-}
-
-#more {
-    display: none;
-}
+/* =========================
+           util
+=========================== */
 
 .pc-logo {
     display: block;
@@ -624,8 +433,9 @@ footer img {
     display: none;
 }
 
+
 /* =========================
-ハンバーガーメニューの実装
+      hamburger menu
 =========================== */
 
 #drawer_input {
@@ -636,60 +446,61 @@ footer img {
     display: none;
 }
 
-/*スマホ用*/
+
+/* =========================
+   スマホ用（width 480px）
+=========================== */
 
 @media screen and (max-width: 480px) {
+    
     html, body, header, nav, main, .main-visual, .main-visual-text, .works, .profile, .blogs, .blogs-contents, footer {
         width: 100%;
     }
-main {
-     padding: 64px 0; 
-}
-    .none {
-        display: none !important;
+    
+    main {
+        padding: 64px 0;
     }
-    body {
-        padding-top: 0;
-    }
+    
     .pc-logo {
         display: none;
     }
+    
     .sm-logo {
         display: block;
         margin: 0;
         height: 70px;
     }
-    #more {
-        display: block;
-    }
+    
     .heading a {
         display: block;
         padding-top: 7px;
     }
+    
     /* =========================
-    ハンバーガーメニュー
+          hamburger menu
     =========================== */
     .nav-list {
         padding: 0;
         display: block;
     }
-    /* チェックボックスを非表示にする */
+    
     .drawer_hidden {
         display: none;
     }
-    /* ハンバーガーアイコンの設置スペース */
+    
     .drawer_open {
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 30px;
         z-index: 100;
         cursor: pointer;
-        top: 35px;
-        right: 65px;
+        top: 18px;
+        right: 26px;
+        width: 40px;
+        height: 40px;
     }
-    /* ハンバーガーメニューのアイコン */
+    
     .drawer_open span, .drawer_open span:before, .drawer_open span:after {
         content: '';
         display: block;
@@ -700,28 +511,29 @@ main {
         transition: 0.5s;
         position: absolute;
     }
-    /* 三本線の一番上の棒の位置調整 */
+    
     .drawer_open span:before {
-        bottom: 8px;
+        bottom: 10px;
     }
-    /* 三本線の一番下の棒の位置調整 */
+    
     .drawer_open span:after {
-        top: 8px;
+        top: 10px;
     }
-    /*アイコンがクリックされたら真ん中の線を透明にする */
+    
     #drawer_input:checked~.drawer_open span {
         background: rgba(255, 255, 255, 0);
     }
-    /*アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    
     #drawer_input:checked~.drawer_open span::before {
         bottom: 0;
         transform: rotate(45deg);
     }
+    
     #drawer_input:checked~.drawer_open span::after {
         top: 0;
         transform: rotate(-45deg);
     }
-    /* メニューのデザイン*/
+    
     nav {
         height: 100%;
         position: fixed;
@@ -733,14 +545,17 @@ main {
         transition: .5s;
         text-align: center;
     }
+    
     .nav-list-item {
         height: 80px;
         width: 79px;
         margin: 0 auto;
     }
+    
     .nav-list-item:first-child {
         margin-top: 16px;
     }
+    
     .nav-list-item:last-child {
         width: 200px;
         margin: 0 auto;
@@ -750,17 +565,11 @@ main {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
+    
     .nav-list-item a {
-        color: #F9F9F9;
-        text-decoration: none;
-        text-align: center;
-        font-family: "Noto Sans JP";
         font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 145%;
     }
-    /* アイコンがクリックされたらメニューを表示 */
+    
     #drawer_input:checked~nav {
         bottom: 0;
         position: fixed;
@@ -768,6 +577,7 @@ main {
         left: 0;
         height: 100%;
     }
+    
     .contact-button {
         display: flex;
         height: 60px;
@@ -778,558 +588,159 @@ main {
         border-radius: 30px;
         background: #F9F9F9;
     }
-    a.contact-button {
-        color: #EC715F;
-        text-align: center;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 145%;
+    
+    /* =========================
+          main visual
+    =========================== */
+    
+    .main-visual {
+        height: 160px;
     }
-    /*メインビジュアル*/
-.main-visual {
-    height: 160px;
-}
-.main-visual-title {
-    line-height: 110%;
-    padding-top: 44px;
-    width: 100%;
-}
+    
+    .main-visual-title {
+        line-height: 110%;
+        padding-top: 44px;
+        width: 100%;
+    }
+    
     .main-visual-subtitle {
         width: 100%;
         padding: 0 30px 0 30px;
         text-align: center;
     }
- 
- 
-.width-704px {
-    width: 100%;
-}
-
-.blog-title {
-    /* height: 173px; */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    width: 100%;
-    height: 189px;
-}
-
-h3 {
-    /* color: #414141; */
-    /* font-size: 30px; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
-    /* line-height: 145%; */
-    /* margin-bottom: 16px; */
-    /* width: 674px; */
-    /* margin-top: 20px; */
-    /* height: 88px; */
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 145%;
-    width: 398px;
-    height: 132px;
-    margin-bottom: 16px;
-    margin-top: 3px;
-}
-
-.vertical-line {
-    /* display: flex; */
-    /* width: 6px; */
-    /* align-items: flex-start; */
-    /* gap: 10px; */
-    /* border-radius: 5px; */
-    /* background: #EC715F; */
-    height: 100%;
-    display: flex;
-    width: 6px;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 5px;
-    background: #EC715F;
-}
-
-
- 
-.blog-link {
-    display: block;
-    text-decoration: none;
-    width: 702px;
-    margin: 0 auto;
-    /* margin-bottom: 96px; */
-    width: 420px;
-    height: 166px;
-}
-
-.blog {
-    display: flex;
-    justify-content: space-around;
-    /* width: 702px; */
-    margin: 0 auto;
-    margin-bottom: 96px;
-    width: 420px;
-    height: 166px;
-    margin-top: 56px;
-    margin-bottom: 0;
-    height: 2050px;
-}
- 
- 
- 
-.recommend {
-    /* width: 960px; */
-    margin: 0 auto;
-    padding-top: 64px;
-    width: 420px;
-    margin: 0 auto;
-    height: 1250px;
-}
-
-.recomemnd-headding {
-    /* color: #414141; */
-    /* font-size: 20px; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
-    /* line-height: 145%; */
-    margin-bottom: 6px;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans CJK JP;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 145%;
-}
-
-.recommend-blogs {
-    /* width: 960px; */
-    /* height: 319px; */
-    display: inline-flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 48px 0;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 1146px;
-}
-
-.card {
-    width: 272px;
-    height: 356px;
-    border: none;
-    width: 100%;
-}
-
-.blog3-image {
-    background-image: url(../img/blog3-large-image.png);
-    height: 254px;
-    background-size: cover;
-    background-position: center;
-}
-
-.recomemnd-blog-datetime {
-    /* color: #EC715F; */
-    /* font-size: 12px; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    /* line-height: 180%; */
-    display: flex;
-    width: 258px;
-    height: 37.152px;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 14px;
-    color: var(--primary, #EC715F);
-    font-family: Noto Sans JP;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 145%;
-    margin: 0;
-}
-
-.recommend-blog-title {
-    /* color: #414141; */
-    /* font-size: 20px; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
-    /* line-height: 145%; */
-    width: 420px;
-    height: 59px;
-    flex-shrink: 0;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 145%;
-    margin-top: 10px;
-}
- 
-.blog4-image {
-    background-image: url(../img/blog4-large-image.png);
-    height: 254px;
-    margin-left: 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.blog5-image {
-    background-image: url(../img/blog5-large-image.png);
-    height: 254px;
-    margin-left: 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.case {
-    /* border-bottom: solid 1px #D2D2D2; */
-    /* padding-bottom: 96px; */
-    /* width: 704px; */
-    /* margin: 0 auto; */
-    /* padding-top: 96px; */
-    /* width: 420px; */
-    /* margin: 0 auto; */
-    padding: 51px 0;
-}
-
-.workscase {
-    /* width: 704px; */
-    /* height: 260px; */
-    /* margin: 0 auto; */
-    width: 420px !important;
-    margin: 0 auto;
-    height: 362px;
-}
-.workshead {
-    display: block;
-    width: 420px;
-    height: 143px;
-}
-
-.title-group {
-    width: 498px;
-    height: 88px;
-    width: 306px;
-    height: 100px;
-    position: relative;
-}
-
-h4 {
-    /* width: 560px; */
-    /* color: #414141; */
-    /* font-size: 24px; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
-    /* line-height: 145%; */
-    /* margin-bottom: 12px; */
-    /* color: var(--text-black, #414141); */
-    /* font-family: Noto Sans JP; */
-    /* font-size: 24px; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
-    /* line-height: 145%; */
-    /* margin-bottom: 8px; */
-    /* width: 306px; */
-    height: 67px;
-    overflow: hidden;
-    /* color: var(--text-black, #414141); */
-    text-overflow: ellipsis;
-    /* font-family: Noto Sans JP; */
-    /* font-size: 20px; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
-    /* line-height: 145%; */
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 145%;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.datetime {
-    /* color: #EC715F; */
-    /* font-size: 12px; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    /* line-height: 180%; */
-    /* margin-top: 8px; */
-    /* margin-bottom: 8px; */
-    /* width: 306px; */
-    /* height: 57px; */
-    /* color: var(--primary, #EC715F); */
-    /* font-family: Noto Sans JP; */
-    /* font-size: 12px; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    /* line-height: 145%; */
-    height: 17px;
-    margin: 0;
-    color: var(--primary, #EC715F);
-    font-family: Noto Sans CJK JP;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 180%;
-}
-
-.blog:first-child {
-    margin-top: 0;
-}
-
-.content {
-    line-height: 180%;
-    height: 58px;
-    overflow: hidden;
-    color: #414141;
-    text-overflow: ellipsis;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    width: 420px;
-    height: 58px;
-    flex: 1 0 0;
-    /* display: block; */
-    width: 420px;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 108px;
-    left: -114px;
-}
-
-
-.worksindex {
-    padding: 0;
-    width: 107px;
-    height: 32px;
-    border-left: none;
-    border-right: none;
-    display: flex;
-    margin-bottom: 16px;
-}
-
-.example {
-    width: 65px;
-    color: #414141;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-    margin-bottom: 0;
-    width: 107px;
-    height: 32px;
-    display: flex;
-    width: 43px;
-    height: 26px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-}
-
-.number {
-    width: 65px;
-    color: #414141;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-    display: flex;
-    width: 65px;
-    height: 32px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-}
-.category {
-    width: 560px;
-    color: #909090;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-    color: var(--text-gray, #909090);
-    font-family: Noto Sans JP;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 145%;
-    margin-bottom: 0;
-    width: 420px;
-}
-
-.workbody {
-    padding-top: 16px;
-    color: #414141;
-    font-size: 15.5px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-    width: 420px;
-    margin: 0 auto;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-    /* height: 203px; */
-}
- 
-.workstitle {
-    /* width: 570px; */
-    /* height: 112px; */
-    width: 437px;
-    height: 70px;
-}
-
-.work1-image {
-    background-image: url(../img/work1-image.png);
-    height: 400px;
-}
-.image-box {
-    /* margin: 0 auto; */
-    background-size: cover;
-    background-position: center;
-    /* margin-top: 14px; */
-    /* width: 100px !important; */
-    height: 100px;
-    display: block;
-    margin-right: 16px;
-    width: 100%;
-    margin-top: 56px;
-    height: 420px;
-}
-
-.blog2-image {
-    height: 347px !important;
-    margin-bottom: 22.34px !important;
-}
-
-.description {
-    /* color: #414141; */
-    /* font-size: 16px; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    /* line-height: 180%; */
-    margin-bottom: 56px;
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-}
-
-.description p {
-    /* margin: 0; */
-    /* color: #414141; */
-    /* font-size: 16px; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    /* line-height: 180%; */
-    color: var(--text-black, #414141);
-    font-family: Noto Sans JP;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%;
-}
-
-
-.caption {
-    /* color: #888; */
-    /* font-family: Inter; */
-    /* font-size: 14px; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    /* line-height: 160%; */
-    margin-bottom: 56px;
-    color: var(--gray-1, #888);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-}
-
-.caution {
-    /* color: #888; */
-    /* font-family: Inter; */
-    /* font-size: 14px; */
-    /* font-style: normal; */
-    /* font-weight: 400; */
-    /* line-height: 160%; */
-    margin-bottom: 0;
-    color: var(--gray-1, #888);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-}
-
-.blogs-case {
-    width: 306px;
-    height: 100px;
-}
-
-
+    
+    /* =========================
+               blog
+    =========================== */
+    
+    .width-704px {
+        width: 100%;
+    }
+    
+    .blog-title {
+        height: 189px;
+    }
+    
+    h3 {
+        width: 398px;
+        height: 132px;
+        margin-top: 3px;
+    }
+    
+    .blog-link {
+        display: block;
+        text-decoration: none;
+        width: 702px;
+        margin: 0 auto;
+        width: 420px;
+        height: 166px;
+    }
+    
+    .blog {
+        margin: 0 auto;
+        width: 420px;
+    }
+    
+    /* =========================
+            recommend
+    =========================== */
+    
+    .recommend {
+        padding-top: 64px;
+        width: 420px;
+    }
+    
+    .recomemnd-headding {
+        font-size: 24px;
+    }
+    
+    .recommend-blogs {
+        gap: 48px 0;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        height: 356px;
+        width: 100%;
+    }
+    
+    .blog3-image {
+        height: 254px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .recommend-blog-caption {
+        width: 100%;
+    }
+    
+    .recomemnd-blog-datetime {
+        line-height: 145%;
+        margin: 0;
+    }
+    
+    .recommend-blog-title {
+        height: 59px;
+        margin-top: 10px;
+    }
+    
+    .blog4-image {
+        height: 254px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .blog5-image {
+        height: 254px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .case {
+        padding: 51px 0;
+    }
+    
+    .title-group {
+        width: 498px;
+        height: 88px;
+        width: 306px;
+        height: 100px;
+        position: relative;
+    }
+    
+    h4 {
+        height: 67px;
+        margin-bottom: 10px;
+    }
+    
+    .datetime {
+        font-family: "Noto Sans CJK JP";
+    }
+    
+    .image-box {
+        background-size: cover;
+        background-position: center;
+        height: 420px;
+    }
+    
+    .blog2-image {
+        height: 347px !important;
+        margin-bottom: 22.34px !important;
+    }
+    
     .fixed_btn {
         right: 15px;
     }
+    
+    /* =========================
+             footer
+    =========================== */
+    
     footer {
         height: 258px;
         gap: 8px;
     }
-    .contact-link {
-        color: #EC715F;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 700;
-        display: flex;
-        height: 60px;
-        padding: 24px 100px;
-        align-items: center;
-        border-radius: 30px;
-        background: #F9F9F9;
-    }
-    .sns {
-        display: flex;
-        padding: 32px 0px;
-        gap: 60px;
-    }
-    .footer_border_line {
-        width: 100%;
-        height: 1px;
-        opacity: 0.3;
-        background: #F9F9F9;
-    }
+
     .footer-text {
         font-size: 12px;
         line-height: 145%;
