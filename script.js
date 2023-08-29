@@ -1,42 +1,22 @@
 /* global $ */
+/* global location */
+
+// ハンバーガーメニュー
+$(function() {
+  $('.nav-list li a').on('click', function(event) {
+    $('#drawer_input').prop('checked', false);
+  });
+});
 
 // スクロール量が1000pxを超えた際にページ上部へのボタンを表示
 $(window).scroll(function() {
     let scroll = $(this).scrollTop();
-    console.log(scroll);
     if(scroll >= 1000){
         $('.fixed_btn').toggleClass('show').removeClass('hide');
     }else{
         $('.fixed_btn').addClass('hide').removeClass('show');
     }
 });
-
-// ハンバーガーメニュー
-$(function() {
-  // console.log('OK');
-  $('.nav-list li a').on('click', function(event) {
-    // console.log('clicked');
-    $('#drawer_input').prop('checked', false);
-  });
-});
-
-
-// アコーディオン開閉
-$(function() {
-    $('#more').on('click', function() {
-        $('.blog-cart:nth-child(n + 4)').toggleClass('none');
-        $('#more').toggleClass('none');
-        $('#close').toggleClass('none');
-        $('.blog-cart:nth-child(3)').attr('style', 'margin-bottom: 48px;');
-    });
-
-    $('#close').on('click', function() {
-        $('.blog-cart:nth-child(n + 4) ').toggleClass('none');
-        $('#more').toggleClass('none'); 
-        $('#close').toggleClass('none');
-    });
-});
-
 
 // 入力ボックス入力中に背景色変更
 $(function() {
@@ -90,32 +70,8 @@ $(function() {
         }
         
         if(flag){
-            $('#name').val('');
-            $('#email').val('');
-            $('#content').val('');
-            console.log('送信');
-            
-            const modal = $('.modal_content');
-            const overlay = $('.modal_overlay');
-            
-            modal.addClass("open");
-            overlay.addClass("open");
+            location.href = '../index.html';
         }
     });
 });
 
-// モーダル表示
-$(function(){
-    const modal = $('.modal_content');
-    const overlay = $('.modal_overlay');
-    // 「閉じる」をクリックしたらモーダルを非表示
-    $('.modal_delete').on('click', function(){
-        modal.removeClass("open");
-        overlay.removeClass("open");
-    });
-    // オーバーレイをクリックしたら非表示
-    overlay.on('click', function(){
-        modal.removeClass("open");
-        overlay.removeClass("open");
-    });
-});

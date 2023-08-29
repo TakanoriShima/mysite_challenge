@@ -237,6 +237,7 @@ h2 {
     padding-top: 64px;
     color: #414141;
     line-height: 180%;
+    text-align: left;
 }
 
 .profile-contents {
@@ -481,7 +482,6 @@ footer img {
     display: none;
 }
 
-
 /* =========================
       hamburger menu
 =========================== */
@@ -493,7 +493,6 @@ footer img {
 .drawer_open {
     display: none;
 }
-
 
 /* =========================
    スマホ用（width 480px）
