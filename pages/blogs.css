@@ -163,35 +163,37 @@ main {
 .image-box {
     width: 166px;
     margin: 0 auto;
+    background-size: cover;
+    background-position: center;    
 }
 
 .blog1-image {
-    background-image: url(../img/blog1-image.png);
+    background-image: url(../img/blog1.jpg);
     margin-left: 0;
 }
 
 .blog2-image {
-    background-image: url(../img/blog2-image.png);
+    background-image: url(../img/blog2.jpg);
     margin-left: 0;
 }
 
 .blog3-image {
-    background-image: url(../img/blog3-image.png);
+    background-image: url(../img/blog3.jpg);
     margin-left: 0;
 }
 
 .blog4-image {
-    background-image: url(../img/blog4-image.png);
+    background-image: url(../img/blog4.jpg);
     margin-left: 0;
 }
 
 .blog5-image {
-    background-image: url(../img/blog5-image.png);
+    background-image: url(../img/blog5.jpg);
     margin-left: 0;
 }
 
 .blog6-image {
-    background-image: url(../img/blog6-image.png);
+    background-image: url(../img/blog6.jpg);
     margin-left: 0;
 }
 

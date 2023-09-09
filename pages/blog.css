@@ -191,14 +191,16 @@ h3 {
 .image-box {
     height: 704px;
     margin: 56px 0;
+    background-size: cover;
+    background-position: center;    
 }
 
 .blog1-image {
-    background-image: url(../img/blog1-large-image.png);
+    background-image: url(../img/blog1.jpg);
 }
 
 .blog2-image {
-    background-image: url(../img/blog2-large-image.png);
+    background-image: url(../img/blog1-2.jpg);
     height: 528px;
     margin-left: 0;
 }
@@ -278,20 +280,26 @@ h3 {
 }
 
 .blog3-image {
-    background-image: url(../img/blog3-large-image.png);
+    background-image: url(../img/blog1.jpg);
     height: 177px;
+    background-size: cover;
+    background-position: center;    
 }
 
 .blog4-image {
-    background-image: url(../img/blog4-large-image.png);
+    background-image: url(../img/blog2.jpg);
     height: 177px;
     margin-left: 0;
+    background-size: cover;
+    background-position: center;    
 }
 
 .blog5-image {
-    background-image: url(../img/blog5-large-image.png);
+    background-image: url(../img/blog3.jpg);
     height: 177px;
     margin-left: 0;
+    background-size: cover;
+    background-position: center;    
 }
 
 .description {

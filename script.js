@@ -70,7 +70,7 @@ $(function() {
         }
         
         if(flag){
-            location.href = '../index.html';
+            location.href = 'contact.html';
         }
     });
 });
