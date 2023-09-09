@@ -346,50 +346,34 @@ h3 {
     margin: 0;
 }
 
-.blog1 {
-    background-image: url(img/blog1.jpg);
+.image-box {
     height: 177px;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
+}
+
+.blog1 {
+    background-image: url(img/blog1.jpg);
 }
 
 .blog2 {
     background-image: url(img/blog2.jpg);
-    height: 177px;
-    background-size: cover;
-    background-position: center;    
 }
 
 .blog3 {
     background-image: url(img/blog3.jpg);
-    width: 272px;
-    height: 177px;
-    background-size: cover;
-    background-position: center;    
 }
 
 .blog4 {
     background-image: url(img/blog4.jpg);
-    width: 272px;
-    height: 177px;
-    background-size: cover;
-    background-position: center;    
 }
 
 .blog5 {
     background-image: url(img/blog5.jpg);
-    width: 272px;
-    height: 177px;
-    background-size: cover;
-    background-position: center;    
 }
 
 .blog6 {
     background-image: url(img/blog6.jpg);
-    width: 272px;
-    height: 177px;
-    background-size: cover;
-    background-position: center;    
 }
 
 /* =========================
