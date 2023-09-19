@@ -326,7 +326,7 @@ footer img {
 @media screen and (max-width: 480px) {
 
     html, body, header, nav, main, .main-visual, .main-visual-text, .works, .profile, .blogs, .blogs-contents, footer {
-        width: 100%;
+        width: 100vw;
     }
 
     main {
@@ -476,7 +476,7 @@ footer img {
     }
     
     .main-visual-subtitle {
-        width: 100%;
+        width: 100vw;
         padding: 0 30px 0 30px;
         text-align: center;
     }
@@ -486,19 +486,19 @@ footer img {
     =========================== */
     
     .blog-link {
-        width: 420px;
+        width: 100vw;
         margin: 0 auto;
     }
     
     .blog {
         margin: 0 auto;
-        width: 420px;
+        width: 87.5vw;
         height: 166px;
         margin-top: 56px;
     }
     
     .title-group {
-        width: 306px;
+        width: 64vw;
         height: 100px;
         position: relative;
     }
@@ -523,18 +523,21 @@ footer img {
     .content {
         position: absolute;
         top: 108px;
-        left: -114px;
+        left: -23.75vw;
     }
     
     .image-box {
         background-size: cover;
         background-position: center;
-        height: 100px;
-        margin-right: 16px;
+        height: 21vw;
+        width: 21vw;
+        /* margin-right: 16px; */
     }
     
     .blogs-case {
         height: 100px;
+        width: 64vw;
+        /* margin-left: 3.3vw; */
     }
     
     /* =========================
