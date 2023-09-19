@@ -526,9 +526,9 @@ footer img {
     }
     
     .workscase {
-        width: 420px;
+        width: 87.5%;
         margin: 0 auto;
-        height: 362px
+        height: auto;
     }
     
     .workshead {
@@ -570,7 +570,7 @@ footer img {
     
     .category {
         line-height: 145%;
-        width: 420px;
+        width: 87.5%;
     }
     
     .workbody {
@@ -583,7 +583,7 @@ footer img {
     }
     
     .image-box {
-        width: 420px;
+        width: 87.5%;
         height: 400px;
         margin-top: 16px;
     }
