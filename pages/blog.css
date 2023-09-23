@@ -607,13 +607,23 @@ footer img {
     }
     
     .blog-title {
-        height: 189px;
+        height: 40vw;
+    }
+    
+    .vertical-line {
+        width: 1.25vw;
+        border-radius: 1vw;
+    }
+    
+    .blog-title div {
+        width: 82.9vw;
     }
     
     h3 {
-        width: 398px;
-        height: 132px;
+        width: 82.9vw;
+        height: 27.5vw;
         margin-top: 3px;
+        font-size: 6.25vw;
     }
     
     .blog-link {
@@ -627,7 +637,7 @@ footer img {
     
     .blog {
         margin: 0 auto;
-        width: 420px;
+        width: 87.5vw;
     }
     
     /* =========================
@@ -636,7 +646,7 @@ footer img {
     
     .recommend {
         padding-top: 64px;
-        width: 420px;
+        width: calc(100vw - 60px);
     }
     
     .recomemnd-headding {
