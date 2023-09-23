@@ -350,7 +350,7 @@ h4 {
 }
 
 footer {
-    height: 290px;
+    height: 312px;
     color: #FFF;
     background-color: #EC715F;
     display: flex;
@@ -736,7 +736,7 @@ footer img {
     }
 
     .footer-text {
-        font-size: 12px;
         line-height: 145%;
+        padding-bottom: 10px;
     }
 }

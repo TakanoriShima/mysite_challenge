@@ -241,7 +241,7 @@ h4 {
 =========================== */
 
 footer {
-    height: 290px;
+    height: 312px;
     color: #FFF;
     background-color: #EC715F;
     display: flex;
@@ -527,17 +527,13 @@ footer img {
     }
     
     .image-box {
-        background-size: cover;
-        background-position: center;
         height: 21vw;
         width: 21vw;
-        /* margin-right: 16px; */
     }
     
     .blogs-case {
         height: 100px;
         width: 64vw;
-        /* margin-left: 3.3vw; */
     }
     
     /* =========================
@@ -550,7 +546,7 @@ footer img {
     }
     
     .footer-text {
-        font-size: 12px;
         line-height: 145%;
+        padding-bottom: 10px;
     }
 }

@@ -238,7 +238,7 @@ textarea {
 =========================== */
 
 footer {
-    height: 290px;
+    height: 312px;
     background-color: #EC715F;
     display: flex;
     justify-content: flex-end;
@@ -686,11 +686,8 @@ footer img {
     }
     
     .footer-text {
-        font-size: 12px;
         line-height: 145%;
+        padding-bottom: 10px;
     }
     
-    .fixed_btn {
-        right: 15px;
-    }
 }
