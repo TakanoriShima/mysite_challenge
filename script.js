@@ -52,14 +52,14 @@ $(window).scroll(function() {
 // アコーディオン開閉
 $(function() {
     $('#more').on('click', function() {
-        $('.blog-cart:nth-child(n + 4)').toggleClass('show').toggleClass('hide');
+        $('.blog-cart:nth-child(n + 4)').toggleClass('none').toggleClass('block');
         $('#more').toggleClass('none');
         $('#close').toggleClass('none');
         $('.blog-cart:nth-child(3)').attr('style', 'margin-bottom: 48px;');
     });
 
     $('#close').on('click', function() {
-        $('.blog-cart:nth-child(n + 4) ').toggleClass('hide').toggleClass('show');
+        $('.blog-cart:nth-child(n + 4) ').toggleClass('block').toggleClass('none');
         $('#more').toggleClass('none'); 
         $('#close').toggleClass('none');
     });

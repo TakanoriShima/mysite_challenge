@@ -514,6 +514,10 @@ footer img {
         display: none !important;
     }
     
+    .block {
+        display: block !important;
+    }
+    
     .pc-logo {
         display: none;
     }
