@@ -166,7 +166,7 @@ h2 {
 }
 
 .main-contents {
-    padding: 60px 0;
+    padding: 64px 0;
     display: flex;
     gap: 72px;
     flex-wrap: wrap;
@@ -703,7 +703,7 @@ footer img {
         width: 100%;
         margin: 0 auto;
         gap: 16px;
-        padding: 60px 3%;
+        padding: 64px 3%;
     }
     
     .main-contents a {
