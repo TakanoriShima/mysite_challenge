@@ -50,10 +50,11 @@
         </div>
         <!--main-->
         <main class="contact" id="contact">
-            <p class="contact-text">お問い合わせはこちらよりお願い致します。２営業日以内にご返信させて頂きます。</p>
+            <p class="contact-text">お問い合わせはこちらよりお願い致します。２営業日以内にご返信させて頂きます。
+            </p>
             <!--contact-->
             <div class="cantact-contents">
-                <form action="contact.html" id="form">
+                <div id="form">
                     <label for="name">お名前</label>
                     <input type="text" id="name" placeholder="お名前を入力してください">
                     <label for="email">メールアドレス</label>
@@ -63,6 +64,17 @@
                     <button class="send">送信</button>
                 </div>
             </div>
+            <!--モーダルの中味 -->
+            <div class="modal_content">
+                <p class="success">送信完了しました</p>
+                <div class="border_line"></div>
+                <p class="thanks">メールは送信されました。
+                <br>ありがとうございました。
+                </p>
+                <a class="modal_delete" href="../index.html">TOPページへ戻る</a>
+            </div>
+            <!--元の画面を覆い被せる要素 -->
+            <div class="modal_overlay"></div>
         </main>
         <!--footer-->
         <footer>
