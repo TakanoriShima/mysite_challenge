@@ -556,11 +556,7 @@ footer img {
           hamburger menu
     =========================== */
     
-    .nav-list {
-        padding: 0;
-        display: block;
-    }
-    
+
     .drawer_hidden {
         display: none;
     }
@@ -764,6 +760,7 @@ footer img {
     }
     
     .blogs-contents {
+        padding-top: 24px;
         display: block;
     }
     
@@ -783,10 +780,6 @@ footer img {
     
     .blog-cart:last-child {
         margin-bottom: 80px;
-    }
-    
-    .blogs-contents {
-        padding-top: 24px;
     }
     
     .blog-link {
