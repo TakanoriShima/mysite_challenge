@@ -501,6 +501,98 @@ footer img {
 }
 
 /* =========================
+     slick carousel
+=========================== */
+
+.works {
+    width: 100%;
+}
+
+.slider {
+    padding-top: 60px;
+    padding-bottom: 39px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider div {
+    margin: 0 0;
+    height: 498px;
+    width: 50vw;
+}
+
+.slider .slick-next {
+    z-index: 100;
+    right: 64px;
+}
+
+.slider .slick-prev {
+    z-index: 100;
+}
+
+.slick-list.draggable {
+    width: 100%;
+}
+
+.slider .slick-slide {
+    transition: all .5s;
+    /*拡大や透過のアニメーションを0.5秒で行う*/
+    opacity: 0.5;
+    /*透過50%*/
+    background: var(--black, #1C1C1C);
+}
+
+.slider .slick-slide.slick-center {
+    transform: scale(1);
+    /*中央の画像のサイズだけ等倍に*/
+    opacity: 1;
+    /*透過なし*/
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 64px;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 50px !important;
+}
+
+.slick-prev:before {
+    left: 40%;
+}
+
+.slick-next:before {
+    right: 40%;
+}
+
+.view-all {
+    margin-top: 126px;
+}
+
+.slick-before:before {
+    left: 1220%;
+}
+
+.slick-next:before {
+    right: 780%;
+}
+
+.slick-prev:before {
+    /* left: 1110px !important; */
+    left: 244px;
+}
+
+/* =========================
    スマホ用（width 480px）
 =========================== */
 
@@ -884,4 +976,119 @@ footer img {
         padding-bottom: 10px;
     }
     
+    /* =========================
+         slick carousel
+    =========================== */
+    
+    header {
+        max-width: 100vw !important;
+    }
+    
+    .works {
+        width: 100%;
+    }
+    
+    .slider {
+        padding-top: 60px;
+        padding-bottom: 39px;
+    }
+    
+    .slider img {
+        width: 100%;
+    }
+    
+    .slider div {
+        margin: 0 0;
+        height: 249px;
+        width: 100vw;
+    }
+    
+    .slider .slick-next {
+        z-index: 100;
+    }
+    
+    .slider .slick-prev {
+        z-index: 100;
+    }
+    
+    .slick-list.draggable {
+        width: 100vw;
+    }
+    
+    .slider .slick-slide {
+        transition: all .5s;
+        /*拡大や透過のアニメーションを0.5秒で行う*/
+        opacity: 0.5;
+        /*透過50%*/
+        background: var(--black, #1C1C1C);
+    }
+    
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        top: 50%;
+    }
+    
+    .slick-prev:before {
+        left: 100%;
+    }
+    
+    .slick-next:before {
+        left: 104%;
+    }
+    
+    .slider .slick-next {
+        z-index: 100;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 100;
+        width: 100vw !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    
+    .slider .slick-prev {
+        z-index: 100;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .slider .slick-slide.slick-center {
+        transform: scale(1);
+        /*中央の画像のサイズだけ等倍に*/
+        opacity: 1;
+        /*透過なし*/
+    }
+    
+    .slick-dotted.slick-slider {
+        margin-bottom: 30px;
+        position: relative;
+        margin: 0 !important;
+        padding: 0 40px;
+        width: 100vw !important;
+        background-color: #888;
+        max-width: 100vw;
+        margin-top: 64px !important;
+        z-index: 1;
+    }
+    
+    .main-contents {
+        width: 420px !important;
+        margin: 0 auto !important;
+        gap: 16px !important;
+    }
+    
+    .slick-dots {
+        left: 0;
+        width: 100vw;
+    }
+        
+    .slick-list.draggable {
+        width: 100%;
+    }
+    
+    .view-all {
+        margin-top: 80px !important;
+    }
 }
