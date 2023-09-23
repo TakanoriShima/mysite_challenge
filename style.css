@@ -455,6 +455,11 @@ footer img {
     margin-left: 16px;
 }
 
+.fixed_btn:hover {
+    background-color: #888;
+    transition: 0.4s;
+}
+
 /* =========================
            util
 =========================== */
